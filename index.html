@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#c2185b" />
+    <meta
+      name="description"
+      content="A handwritten love letter, made with love."
+    />
+    <title>A Letter Just For You ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hearts" aria-hidden="true"></div>
+
+    <main>
+      <!-- COVER -->
+
+      <!-- COVER -->
+
+      <section class="hero" id="home">
+        <!-- BACKGROUND VIDEO -->
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+        >
+          <source
+            src="./assets/video_20260903_185246_edit.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support HTML5 video.
+        </video>
+
+        <!-- DARK/PINK OVERLAY -->
+        <div class="hero-overlay"></div>
+
+        <!-- ALL CONTENT ON TOP OF VIDEO -->
+        <div class="hero-content">
+          <p class="eyebrow">A little surprise, made only for you</p>
+
+          <h1>
+            A Letter<br />
+            <span>Just For You</span> ❤️
+          </h1>
+
+          <p class="subtitle">
+            Some feelings are hard to say out loud...<br />
+            so I wrote them down for you...
+          </p>
+
+          <button class="primary-btn" id="openBtn">
+            Open My Letter <span>✉</span>
+          </button>
+        </div>
+
+        <!-- ENVELOPE -->
+
+        <!-- SCROLL INDICATOR -->
+        <div class="scroll-down">
+          <span></span>
+
+          <p>Scroll to open my heart</p>
+        </div>
+      </section>
+
+      <!-- LETTER -->
+      <section class="letter-section" id="letter">
+        <div class="section-heading">
+          <span>♥</span>
+          <p id="pageIndicator">Page 1 of 2</p>
+          <span>♥</span>
+        </div>
+
+        <div class="letter-card">
+          <aside class="side-note">
+            <div class="script">Page <span id="sidePage">1</span> ♡</div>
+            <p id="sideText">
+              Every word here<br />comes straight<br />from my heart.
+            </p>
+            <div class="mini-heart">♡</div>
+          </aside>
+
+          <div class="paper-frame">
+            <div class="paper">
+              <img
+                id="letterImage"
+                src="assets/page1.jpg"
+                alt="Handwritten love letter page 1"
+              />
+            </div>
+            <div class="swipe-hint">← swipe / tap arrows →</div>
+          </div>
+
+          <div class="nav-arrows">
+            <button class="round-btn" id="prevBtn" aria-label="Previous page">
+              ←
+            </button>
+            <button class="round-btn" id="nextBtn" aria-label="Next page">
+              →
+            </button>
+          </div>
+        </div>
+
+        <button class="next-page-btn" id="nextPageBtn">
+          Next Page <span>→</span>
+        </button>
+      </section>
+
+      <!-- ENDING -->
+      <section class="ending" id="ending">
+        <div class="ending-inner">
+          <div class="script">That's Everything I Wanted To Say ♡</div>
+          <p>Thank you for being the most amazing part of my life.</p>
+          <h2>I love you... Always &amp; Forever ❤️</h2>
+
+          <div class="music-box">
+            <div class="music-icon">♫</div>
+            <div>
+              <strong>Our Song</strong>
+              <small id="musicStatus"
+                >Vidindhaalum kuda <b>Irul pusa vendum</b></small
+              >
+            </div>
+            <audio id="ourSong" controls preload="none">
+              <source src="assets/WhatsApp Audio 2026-09-03 at 11.22.25 PM.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+
+          <button class="replay-btn" id="replayBtn">Read Again ↻</button>
+        </div>
+        <div class="envelope-wrap" id="rose">
+          
+      
+          
+          <div class="glow"></div>
+      
+          <div class="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body"></div>
+
+            <div class="seal">♥</div>
+          </div>
+
+          <span class="petal p1">♥</span>
+          <span class="petal p2">♥</span>
+          <span class="petal p3">♥</span>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast">A little message from my heart ❤️</div>
+    <script src="script.js"></script>
+  </body>
+</html>
